@@ -35,7 +35,7 @@ def run_hpo(trials: int):
 
 def objective(trial):
     params = {
-        'epochs': 10,
+        'epochs': 300,
         'lr0': trial.suggest_float('lr0',1e-5,1e-2,log=True),
         'weight_decay': trial.suggest_float('weight_decay',1e-6,1e-3),
         'dropout': trial.suggest_float('dropout',0.0,0.5),
