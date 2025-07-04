@@ -37,7 +37,7 @@ def train_model(params, trial=None):
         
     train_args = {
             'data': os.path.abspath(DATA_PATH),
-            'epochs': params.get('epochs', 200),
+            'epochs': params.get('epochs', 10),
             'imgsz': params.get('imgsz', 640),
             'batch': params.get('batch', 16),
             'device': DEVICE,

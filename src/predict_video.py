@@ -31,7 +31,7 @@ def process_video(model_path, input_video_path, output_video_path):
         if not ret:
             break
         
-        results = model(frame, conf=0.8, verbose=False)
+        results = model(frame, conf=0.5, verbose=False)
         
         annotated_frame = results[0].plot()
         
@@ -46,7 +46,7 @@ def process_video(model_path, input_video_path, output_video_path):
     print(f"Видео сохранено: {output_video_path}")
 
 if __name__ == "__main__":
-    model_path = "/home/imran-nasyrov/test_y/outputs/train/default16/weights/best.pt"
+    model_path = "/home/imran-nasyrov/test_y/outputs/train/default17/weights/best.pt"
     input_video_path = "/home/imran-nasyrov/test_y/dish-detection-3/4_1.MOV"
-    output_video_path = "/home/imran-nasyrov/test_y/4_1_annotated.mp4"
+    output_video_path = "/home/imran-nasyrov/test_y/default17_4_1_annotated.mp4"
     process_video(model_path, input_video_path, output_video_path)
