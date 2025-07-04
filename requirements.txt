@@ -1,0 +1,11 @@
+torch==2.7.1
+torchvision==0.22.1
+ultralytics==8.3.161
+albumentations==2.0.8
+optuna==4.4.0
+pandas==2.3.0
+opencv-python-headless==4.10.0.84
+matplotlib==3.10.3
+tensorboard==2.19.0
+roboflow==1.2.0
+moviepy==1.0.3
