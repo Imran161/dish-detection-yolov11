@@ -15,14 +15,7 @@ from optuna.visualization.matplotlib import plot_param_importances
 
 from augment import get_aug_params
 from utils import get_device
-# from setup import MOEDEL, DATA_PATH
-     
-# загрузка датасета
-# rf = Roboflow(api_key="xxxxx")
-# project = rf.workspace("dish-workspace").project("dish-detection-46kxn")
-# version = project.version(3)
-# dataset = version.download("yolov11")
-                
+
 SETTINGS['tensorboard'] = True
 
 

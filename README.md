@@ -1,0 +1,1 @@
+![Описание](images/results_default16.png)
